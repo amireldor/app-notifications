@@ -8,10 +8,25 @@
     ".": {
       "types": "./dist/index.d.ts",
       "import": "./dist/index.js"
+    },
+    "./supabase": {
+      "types": "./dist/supabase.d.ts",
+      "import": "./dist/supabase.js"
+    },
+    "./sql/supabase-notifications.sql": "./sql/supabase-notifications.sql"
+  },
+  "peerDependencies": {
+    "@supabase/supabase-js": "^2.102.1"
+  },
+  "peerDependenciesMeta": {
+    "@supabase/supabase-js": {
+      "optional": true
     }
   },
   "files": [
-    "dist"
+    "dist",
+    "sql",
+    "supabase"
   ],
   "scripts": {
     "build": "tsc -p tsconfig.json",
@@ -22,6 +37,7 @@
   "license": "ISC",
   "type": "module",
   "devDependencies": {
+    "@supabase/supabase-js": "^2.102.1",
     "@types/node": "^25.5.2",
     "typescript": "^6.0.2"
   }
