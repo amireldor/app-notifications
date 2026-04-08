@@ -1,12 +1,13 @@
 import test from "node:test";
 import assert from "node:assert/strict";
+import { createRequire } from "node:module";
 
 import {
   createNotificationsService,
   InMemoryNotificationsStore,
   InvalidCursorError,
   NotificationNotFoundError,
-} from "../dist/index.js";
+} from "../dist/esm/index.js";
 
 function buildService() {
   const store = new InMemoryNotificationsStore();
@@ -142,4 +143,12 @@ test("markAllRead returns updatedCount and updates unread state", async () => {
 
   const unreadOnly = await service.list("user-1", { unreadOnly: true });
   assert.equal(unreadOnly.items.length, 0);
+});
+
+test("commonjs build can be required", async () => {
+  const require = createRequire(import.meta.url);
+  const cjs = require("../dist/cjs/index.js");
+
+  assert.equal(typeof cjs.createNotificationsService, "function");
+  assert.equal(typeof cjs.InMemoryNotificationsStore, "function");
 });

@@ -2,11 +2,11 @@ import assert from "node:assert/strict";
 import { readFile } from "node:fs/promises";
 import test from "node:test";
 
-import { NotificationsError } from "../dist/index.js";
+import { NotificationsError } from "../dist/esm/index.js";
 import {
   SupabaseNotificationsStore,
   supabaseNotificationsSchemaSql,
-} from "../dist/supabase.js";
+} from "../dist/esm/supabase.js";
 
 test("createDeduped returns duplicate with the existing notification on unique conflict", async () => {
   const existingRow = makeRow({
