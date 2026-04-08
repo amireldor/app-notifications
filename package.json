@@ -1,13 +1,28 @@
 {
   "name": "app-notifications",
   "version": "1.0.0",
-  "description": "",
-  "main": "index.mjs",
+  "description": "Adapter-first TypeScript library for in-app notifications",
+  "main": "./dist/index.js",
+  "types": "./dist/index.d.ts",
+  "exports": {
+    ".": {
+      "types": "./dist/index.d.ts",
+      "import": "./dist/index.js"
+    }
+  },
+  "files": [
+    "dist"
+  ],
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "build": "tsc -p tsconfig.json",
+    "test": "npm run build && node --test test/**/*.test.mjs"
   },
   "keywords": [],
   "author": "Amir Eldor <amir@eldor.dev>",
   "license": "ISC",
-  "type": "module"
+  "type": "module",
+  "devDependencies": {
+    "@types/node": "^25.5.2",
+    "typescript": "^6.0.2"
+  }
 }

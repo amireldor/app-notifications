@@ -16,18 +16,18 @@
 
 ### Recommended Order
 
-1. [ ] Scaffold the TypeScript package layout
-2. [ ] Implement `notifications-payloads`
-3. [ ] Implement `notifications-errors`
-4. [ ] Implement `notifications-pagination`
-5. [ ] Implement `notifications-store-contract`
-6. [ ] Implement `notifications-deduplication`
-7. [ ] Implement `notifications-core`
-8. [ ] Implement `notifications-adapter-memory`
-9. [ ] Add tests for deduplication semantics
-10. [ ] Add tests for pagination semantics
-11. [ ] Add tests for read operations and missing-target errors
-12. [ ] Prepare package exports and type declarations
+1. [x] Scaffold the TypeScript package layout
+2. [x] Implement `notifications-payloads`
+3. [x] Implement `notifications-errors`
+4. [x] Implement `notifications-pagination`
+5. [x] Implement `notifications-store-contract`
+6. [x] Implement `notifications-deduplication`
+7. [x] Implement `notifications-core`
+8. [x] Implement `notifications-adapter-memory`
+9. [x] Add tests for deduplication semantics
+10. [x] Add tests for pagination semantics
+11. [x] Add tests for read operations and missing-target errors
+12. [x] Prepare package exports and type declarations
 
 ### Why This Order
 
