@@ -1,0 +1,13 @@
+{
+  "name": "app-notifications",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.mjs",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [],
+  "author": "Amir Eldor <amir@eldor.dev>",
+  "license": "ISC",
+  "type": "module"
+}
