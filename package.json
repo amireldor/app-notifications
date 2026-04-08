@@ -40,7 +40,18 @@
   },
   "keywords": [],
   "author": "Amir Eldor <amir@eldor.dev>",
-  "license": "ISC",
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/amireldor/app-notifications.git"
+  },
+  "homepage": "https://github.com/amireldor/app-notifications#readme",
+  "bugs": {
+    "url": "https://github.com/amireldor/app-notifications/issues"
+  },
+  "publishConfig": {
+    "access": "public"
+  },
   "type": "module",
   "devDependencies": {
     "@supabase/supabase-js": "^2.102.1",

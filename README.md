@@ -4,6 +4,10 @@ Adapter-first TypeScript library for in-app notifications.
 
 This package is currently experimental and is being evaluated in a real project.
 
+Repository: [github.com/amireldor/app-notifications](https://github.com/amireldor/app-notifications)
+
+License: MIT
+
 ## What It Does
 
 The package provides a small notifications service API and a pluggable persistence boundary:
@@ -122,3 +126,27 @@ Test:
 ```bash
 npm test
 ```
+
+## Publishing
+
+This package is intended to be published publicly on npm.
+
+Before publishing:
+
+```bash
+npm test
+npm pack --dry-run
+```
+
+Then publish:
+
+```bash
+npm publish
+```
+
+The package is configured to:
+
+- build on `prepack`
+- publish as a public package
+- include built output from `dist/`
+- include the shipped SQL migration and Supabase adapter docs
