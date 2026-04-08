@@ -2,6 +2,8 @@
 
 Adapter-first TypeScript library for in-app notifications.
 
+This package is currently experimental and is being evaluated in a real project.
+
 ## What It Does
 
 The package provides a small notifications service API and a pluggable persistence boundary:
