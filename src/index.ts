@@ -33,7 +33,7 @@ export type {
   MarkReadOptions,
   NotificationsService,
 } from "./core.js";
-export { InMemoryNotificationsStore } from "./adapter-memory.js";
+export { InMemoryNotificationsStore } from "./adapters/memory.js";
 export type {
   ListNotificationsStoreResult,
   MarkAllReadResult,

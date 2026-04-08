@@ -1,19 +1,19 @@
-import type { CreateNotificationResult } from "./deduplication.js";
+import type { CreateNotificationResult } from "../deduplication.js";
 import type {
   Notification,
   NotificationData,
   NormalizedCreateNotificationInput,
-} from "./payloads.js";
+} from "../payloads.js";
 import {
   compareNotificationOrder,
   isAfterCursor,
   type NormalizedListNotificationsQuery,
-} from "./pagination.js";
+} from "../pagination.js";
 import type {
   ListNotificationsStoreResult,
   MarkAllReadResult,
   NotificationsStore,
-} from "./store-contract.js";
+} from "../store-contract.js";
 
 export class InMemoryNotificationsStore<
   TType extends string = string,
